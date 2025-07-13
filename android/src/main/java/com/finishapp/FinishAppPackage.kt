@@ -10,7 +10,7 @@ import java.util.HashMap
 class FinishAppPackage : BaseReactPackage() {
 
     override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
-        return if (name == FinishAppModule.NAME) {
+        return if (name == FinishAppImpl.NAME) {
             FinishAppModule(reactContext)
         } else {
             null
@@ -20,13 +20,15 @@ class FinishAppPackage : BaseReactPackage() {
     override fun getReactModuleInfoProvider(): ReactModuleInfoProvider {
         return ReactModuleInfoProvider {
             val moduleInfos: MutableMap<String, ReactModuleInfo> = HashMap()
-            moduleInfos[FinishAppModule.NAME] = ReactModuleInfo(
-                FinishAppModule.NAME,
-                FinishAppModule.NAME,
+            val isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
+
+            moduleInfos[FinishAppImpl.NAME] = ReactModuleInfo(
+                FinishAppImpl.NAME,
+                FinishAppImpl.NAME,
                 false,  // canOverrideExistingModule
                 false,  // needsEagerInit
                 false,  // isCxxModule
-                true // isTurboModule
+                isTurboModule // isTurboModule
             )
         moduleInfos
         }

@@ -1,13 +1,12 @@
-import { Text, View, StyleSheet } from "react-native";
-import { multiply } from "react-native-finish-app";
+import { View, StyleSheet, Button } from "react-native";
+import RNFinishApp from "react-native-finish-app";
 
-const result = multiply(3, 7);
 
 export default function App() {
 
     return (
         <View style={styles.container}>
-            <Text>Result: {result}</Text>
+            <Button title="Exit App" onPress={() => RNFinishApp.exitApp()} />
         </View>
     );
 

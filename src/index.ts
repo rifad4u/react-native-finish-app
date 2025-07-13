@@ -1,5 +1,7 @@
-import FinishApp from "./NativeFinishApp";
+import RNFinishApp from "./NativeFinishApp";
 
-export function multiply(a: number, b: number): number {
-    return FinishApp.multiply(a, b);
+export const exitApp = (remove?: boolean) => {
+    return RNFinishApp.exitApp(remove);
 };
+
+export default RNFinishApp;
