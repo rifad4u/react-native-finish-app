@@ -34,7 +34,7 @@ def getExtOrIntegerDefault(name) {
 
 android {
 
-    namespace "com.finishapp"
+    namespace "com.rifad4u.finishapp"
 
     compileSdkVersion getExtOrIntegerDefault("compileSdkVersion")
 
@@ -91,6 +91,6 @@ if (isNewArchitectureEnabled()) {
     react {
         jsRootDir = file("../src/")
         libraryName = "FinishApp"
-        codegenJavaPackageName = "com.finishapp"
+        codegenJavaPackageName = "com.rifad4u.finishapp"
     }
 }

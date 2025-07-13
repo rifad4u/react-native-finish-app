@@ -118,7 +118,7 @@
         "type": "modules",
         "jsSrcsDir": "src",
         "android": {
-            "javaPackageName": "com.finishapp"
+            "javaPackageName": "com.rifad4u.finishapp"
         }
     },
     "create-react-native-library": {

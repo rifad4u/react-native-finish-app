@@ -6,7 +6,7 @@ export default function App() {
 
     return (
         <View style={styles.container}>
-            <Button title="Exit App" onPress={() => RNFinishApp.exitApp()} />
+            <Button title="Exit App" onPress={() => RNFinishApp.exitApp(false)} />
         </View>
     );
 

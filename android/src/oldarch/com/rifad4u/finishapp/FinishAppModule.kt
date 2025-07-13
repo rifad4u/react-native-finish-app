@@ -1,4 +1,4 @@
-package com.finishapp
+package com.rifad4u.finishapp
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
