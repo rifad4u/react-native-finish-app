@@ -3,7 +3,7 @@ PODS:
   - DoubleConversion (1.1.6)
   - fast_float (6.1.4)
   - FBLazyVector (0.79.2)
-  - FinishApp (0.1.0):
+  - FinishApp (0.2.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1910,7 +1910,7 @@ SPEC CHECKSUMS:
   DoubleConversion: cb417026b2400c8f53ae97020b2be961b59470cb
   fast_float: 06eeec4fe712a76acc9376682e4808b05ce978b6
   FBLazyVector: 84b955f7b4da8b895faf5946f73748267347c975
-  FinishApp: 845d5889fa5c9f94f8cf13a68784fb5395f351c6
+  FinishApp: 605c3ab910acf18891599e3a8ec4d6112c33a331
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 314be5250afa5692b57b4dd1705959e1973a8ebe

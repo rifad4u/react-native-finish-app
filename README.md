@@ -12,11 +12,27 @@ npm install react-native-finish-app
 
 
 ```js
-import { multiply } from 'react-native-finish-app';
+import { View, StyleSheet, Button } from "react-native";
+import RNFinishApp from "react-native-finish-app";
 
-// ...
 
-const result = multiply(3, 7);
+export default function App() {
+
+    return (
+        <View style={styles.container}>
+            <Button title="Exit App" onPress={() => RNFinishApp.exitApp(false)} />
+        </View>
+    );
+
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center"
+    }
+});
 ```
 
 
