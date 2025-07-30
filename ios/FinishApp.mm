@@ -4,7 +4,7 @@
 
 RCT_EXPORT_MODULE();
 
-- (void)exitApp:(nonnull NSNumber *)remove {
+RCT_EXPORT_METHOD(exitApp:(nonnull NSNumber *)remove) {
     exit(0);
 }
 
